@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Characters | The Rise Of Seron Wiki</title>
+  <title>The Rise Of Seron Wiki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
@@ -57,6 +57,13 @@
       text-shadow: 0 0 12px rgba(124,255,91,0.7);
     }
 
+    .site-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+    }
+
     nav { display: flex; gap: 1rem; }
     nav a { color: var(--text-muted); border-bottom: 1px solid transparent; }
     nav a:hover { color: var(--lime); border-bottom-color: var(--lime); }
@@ -65,10 +72,14 @@
       max-width: 1100px;
       margin: 1.5rem auto 2.5rem;
       padding: 0 1.5rem;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
       gap: 1.5rem;
       flex: 1;
+    }
+
+    @media(max-width:900px) {
+      main { grid-template-columns: 1fr; }
     }
 
     .panel {
@@ -77,6 +88,8 @@
       border-radius: 10px;
       padding: 1.25rem 1.4rem;
       box-shadow: 0 0 30px rgba(0,0,0,0.9);
+      position: relative;
+      overflow: hidden;
     }
 
     .panel h1, .panel h2 {
@@ -84,10 +97,6 @@
       text-transform: uppercase;
       letter-spacing: 0.18em;
       margin-bottom: 0.75rem;
-    }
-
-    .character-block {
-      margin-bottom: 1.5rem;
     }
 
     .divider {
@@ -120,51 +129,67 @@
 
 <header>
   <div class="header-inner">
-    <div class="site-title">Characters</div>
+    <div>
+      <div class="site-title">The Rise Of Seron Wiki</div>
+      <div class="site-subtitle">Omniversal Chronicles Of Super Darkness</div>
+    </div>
 
     <nav>
       <a href="index.html">Main Page</a>
       <a href="characters.html">Characters</a>
       <a href="#">The Guardians</a>
       <a href="#">The Zavila</a>
+      <a href="#categories">Categories</a>
     </nav>
   </div>
 </header>
 
 <main>
 
+  <!-- MAIN PANEL -->
   <section class="panel">
-    <h1>Characters</h1>
-
-    <!-- SERON -->
-    <div class="character-block">
-      <h2>Seron “Super” Darkness</h2>
-      <p>
-        Seron is the omniversal god, the creator of the ROS Universe and The Zavila Galaxy.
-        His power is infinite, his darkness controlled and intelligent, and his role as the
-        main hero defines the fate of all existence.
-      </p>
-    </div>
+    <h1>Welcome to The Rise Of Seron</h1>
+    <p>
+      The central archive of the <span class="highlight">ROS Universe</span>, the
+      <span class="highlight">Zavila Galaxy</span>, and the legacy of
+      <span class="highlight">Seron “Super” Darkness</span>.
+    </p>
 
     <hr class="divider" />
 
-    <!-- KOLE -->
-    <div class="character-block">
-      <h2>Kole Rogue</h2>
-      <p>
-        Kole is one of the earliest warriors shaped by Seron’s influence. His abilities,
-        resilience, and connection to the Zavila Galaxy make him a key figure in the early
-        eras of the omniversal saga.
-      </p>
-    </div>
+    <h2>About the Universe</h2>
+    <p>
+      Seron “Super” Darkness is the omniversal god, the main hero, and the creator of
+      both <span class="highlight">The ROS Universe</span> and <span class="highlight">The Zavila</span>.
+    </p>
 
+    <h2>The Guardians</h2>
+    <p>
+      Seron formed The Guardians — an elite order empowered with fragments of his will.
+    </p>
+
+    <hr class="divider" id="categories" />
+
+    <h2>Categories</h2>
+    <p><a href="characters.html">Characters</a></p>
+    <p><a href="#">Factions</a></p>
+    <p><a href="#">Locations</a></p>
+    <p><a href="#">Lore</a></p>
   </section>
+
+  <!-- INFOBOX -->
+  <aside class="panel">
+    <h2>Omniversal Overview</h2>
+    <p><strong>Central Figure:</strong> Seron “Super” Darkness</p>
+    <p><strong>Primary Setting:</strong> ROS Universe & The Zavila Galaxy</p>
+    <p><strong>Defenders:</strong> The Guardians</p>
+  </aside>
 
 </main>
 
 <footer>
   <div class="footer-inner">
-    <span>© The Rise Of Seron Wiki — Characters</span>
+    <span>© The Rise Of Seron Wiki — Omniversal Archive</span>
     <span>Black • Dark Green • Lime Green Theme</span>
   </div>
 </footer>
