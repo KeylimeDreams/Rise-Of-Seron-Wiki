@@ -17,7 +17,11 @@
       --border: #163322;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       background: radial-gradient(circle at top, #07140c 0, #020403 55%, #000 100%);
@@ -28,8 +32,13 @@
       flex-direction: column;
     }
 
-    a { color: var(--lime); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a {
+      color: var(--lime);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
 
     header {
       background: linear-gradient(90deg, #020403 0, #050b07 40%, #020403 100%);
@@ -49,8 +58,8 @@
       align-items: center;
     }
 
-    .site-title { 
-      font-size: 1.7rem; 
+    .site-title {
+      font-size: 1.7rem;
       color: var(--lime);
       text-transform: uppercase;
       letter-spacing: 0.08em;
@@ -64,9 +73,34 @@
       letter-spacing: 0.18em;
     }
 
-    nav { display: flex; gap: 1rem; }
-    nav a { color: var(--text-muted); border-bottom: 1px solid transparent; }
-    nav a:hover { color: var(--lime); border-bottom-color: var(--lime); }
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      border-bottom: 1px solid transparent;
+    }
+    nav a:hover {
+      color: var(--lime);
+      border-bottom-color: var(--lime);
+    }
+
+    /* LOGO */
+    .logo-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .site-logo {
+      width: 260px;
+      height: auto;
+      filter: drop-shadow(0 0 12px #7CFF5B);
+    }
 
     main {
       max-width: 1100px;
@@ -79,7 +113,9 @@
     }
 
     @media(max-width:900px) {
-      main { grid-template-columns: 1fr; }
+      main {
+        grid-template-columns: 1fr;
+      }
     }
 
     .panel {
@@ -133,7 +169,6 @@
       <div class="site-title">The Rise Of Seron Wiki</div>
       <div class="site-subtitle">Omniversal Chronicles Of Super Darkness</div>
     </div>
-
     <nav>
       <a href="index.html">Main Page</a>
       <a href="characters.html">Characters</a>
@@ -144,99 +179,101 @@
   </div>
 </header>
 
+<!-- ⭐ LOGO INSERTED HERE ⭐ -->
+<div class="logo-container">
+  <img src="SeronLogo.png" alt="Seron Logo" class="site-logo">
+</div>
+
 <main>
 
   <!-- MAIN PANEL -->
   <section class="panel">
-<h1>Welcome to The Rise Of Seron</h1>
-<p>
-  The Rise Of Seron Wiki is the central archive of the
-  <span class="highlight">ROS Universe</span>, the
-  <span class="highlight">Zavila Galaxy</span>, and the eternal legacy of
-  <span class="highlight">Seron “Super” Darkness</span> — the omniversal architect whose will shapes all existence.
-</p>
+    <h1>Welcome to The Rise Of Seron</h1>
+    <p>
+      The Rise Of Seron Wiki is the central archive of the <span class="highlight">ROS Universe</span>,
+      the <span class="highlight">Zavila Galaxy</span>, and the eternal legacy of
+      <span class="highlight">Seron “Super” Darkness</span> — the omniversal architect whose will shapes all existence.
+    </p>
 
-<hr class="divider" />
+    <hr class="divider" />
 
-<h2>The Origin of Seron</h2>
-<p>
-  Seron did not begin as a being — he began as a force.  
-  A consciousness formed from the first collision between existence and non-existence, stabilizing the chaos that
-  preceded creation. His essence is a controlled darkness, not destructive but foundational, binding the omniverse
-  together like cosmic gravity.
-</p>
-<p>
-  Through Seron’s will, the first galaxies ignited, the first laws of reality formed, and the first sparks of life
-  emerged. He is the <span class="highlight">Prime Creator</span>, the <span class="highlight">Eternal Guardian</span>,
-  and the <span class="highlight">central figure</span> of all ROS lore.
-</p>
+    <h2>The Origin of Seron</h2>
+    <p>
+      Seron did not begin as a being — he began as a force. A consciousness formed from the first
+      collision between existence and non-existence, stabilizing the chaos that preceded creation.
+      His essence is a controlled darkness, not destructive but foundational, binding the omniverse
+      together like cosmic gravity.
+    </p>
 
-<h2>The ROS Universe</h2>
-<p>
-  The ROS Universe is Seron’s primary creation — a vast omniversal domain containing countless galaxies, dimensional
-  layers, and metaphysical systems. Every world carries a trace of Seron’s influence, from the smallest particle to
-  the largest cosmic titan.
-</p>
+    <p>
+      Through Seron’s will, the first galaxies ignited, the first laws of reality formed, and the
+      first sparks of life emerged. He is the <span class="highlight">Prime Creator</span>, the
+      <span class="highlight">Eternal Guardian</span>, and the <span class="highlight">central figure</span>
+      of all ROS lore.
+    </p>
 
-<p>The universe is divided into major eras:</p>
-<p>
-  • <span class="highlight">Founding Era</span> — Seron shapes the first galaxies.<br>
-  • <span class="highlight">Awakening Era</span> — new beings rise, some loyal, some hostile.<br>
-  • <span class="highlight">Fracture Era</span> — cosmic threats attempt to corrupt the Zavila Galaxy.<br>
-  • <span class="highlight">Guardian Era</span> — Seron forms his elite order to protect creation.
-</p>
+    <h2>The ROS Universe</h2>
+    <p>
+      The ROS Universe is Seron’s primary creation — a vast omniversal domain containing countless
+      galaxies, dimensional layers, and metaphysical systems. Every world carries a trace of Seron’s
+      influence, from the smallest particle to the largest cosmic titan.
+    </p>
 
-<h2>The Zavila Galaxy</h2>
-<p>
-  The Zavila Galaxy is the heart of Seron’s creation — a massive spiral galaxy filled with ancient civilizations,
-  energy-rich star clusters, and dimensional gateways. It is the strategic center of the omniverse and the primary
-  battleground for forces seeking to challenge Seron’s rule.
-</p>
-<p>
-  Many of Seron’s greatest allies and enemies originate from Zavila, making it the most documented region in the
-  entire wiki.
-</p>
+    <p>The universe is divided into major eras:</p>
+    <p>
+      • <span class="highlight">Founding Era</span> — Seron shapes the first galaxies.<br>
+      • <span class="highlight">Awakening Era</span> — new beings rise, some loyal, some hostile.<br>
+      • <span class="highlight">Fracture Era</span> — cosmic threats attempt to corrupt the Zavila Galaxy.<br>
+      • <span class="highlight">Guardian Era</span> — Seron forms his elite order to protect creation.
+    </p>
 
-<h2>The Guardians</h2>
-<p>
-  To maintain balance across the omniverse, Seron created
-  <span class="highlight">The Guardians</span> — an elite order of warriors, scholars, and cosmic entities.
-  Each Guardian carries a fragment of Seron’s power, granting them abilities far beyond mortal limits.
-</p>
+    <h2>The Zavila Galaxy</h2>
+    <p>
+      The Zavila Galaxy is the heart of Seron’s creation — a massive spiral galaxy filled with
+      ancient civilizations, energy-rich star clusters, and dimensional gateways. It is the strategic
+      center of the omniverse and the primary battleground for forces seeking to challenge Seron’s rule.
+    </p>
 
-<p>Their duties include:</p>
-<p>
-  • Defending the Zavila Galaxy from external threats<br>
-  • Stabilizing dimensional rifts and anomalies<br>
-  • Confronting corrupted void-born entities<br>
-  • Preserving the cosmic laws Seron established
-</p>
+    <p>
+      Many of Seron’s greatest allies and enemies originate from Zavila, making it the most documented
+      region in the entire wiki.
+    </p>
 
-<h2>What This Wiki Contains</h2>
-<p>
-  This wiki serves as the official archive for:
-</p>
-<p>
-  • Character profiles (Seron, Kole, and more)<br>
-  • Guardian ranks, missions, and history<br>
-  • Zavila Galaxy planets, factions, and civilizations<br>
-  • Major events across all eras<br>
-  • Powers, abilities, and cosmic systems<br>
-  • Lore expansions, timelines, and universe structure
-</p>
+    <h2>The Guardians</h2>
+    <p>
+      To maintain balance across the omniverse, Seron created <span class="highlight">The Guardians</span> —
+      an elite order of warriors, scholars, and cosmic entities. Each Guardian carries a fragment of
+      Seron’s power, granting them abilities far beyond mortal limits.
+    </p>
 
-<hr class="divider" />
+    <p>Their duties include:</p>
+    <p>
+      • Defending the Zavila Galaxy from external threats<br>
+      • Stabilizing dimensional rifts and anomalies<br>
+      • Confronting corrupted void-born entities<br>
+      • Preserving the cosmic laws Seron established
+    </p>
 
-<h2>Categories</h2>
+    <h2>What This Wiki Contains</h2>
+    <p>This wiki serves as the official archive for:</p>
+    <p>
+      • Character profiles (Seron, Kole, and more)<br>
+      • Guardian ranks, missions, and history<br>
+      • Zavila Galaxy planets, factions, and civilizations<br>
+      • Major events across all eras<br>
+      • Powers, abilities, and cosmic systems<br>
+      • Lore expansions, timelines, and universe structure
+    </p>
 
-<p><a href="characters.html">Characters</a></p>
-<p><a href="stories.html">Stories</a></p>    
-<p><a href="reviews.html">Reviews</a></p>
-<p><a href="#">Factions</a></p>
-<p><a href="#">Locations</a></p>
-<p><a href="lore.html">Lore</a></p>
+    <hr class="divider" />
 
-
+    <h2 id="categories">Categories</h2>
+    <p><a href="characters.html">Characters</a></p>
+    <p><a href="stories.html">Stories</a></p>
+    <p><a href="reviews.html">Reviews</a></p>
+    <p><a href="#">Factions</a></p>
+    <p><a href="#">Locations</a></p>
+    <p><a href="lore.html">Lore</a></p>
   </section>
 
   <!-- INFOBOX -->
